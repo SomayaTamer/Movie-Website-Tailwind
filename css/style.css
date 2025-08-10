@@ -1,0 +1,62 @@
+:root{
+  --main-color:#ff2c1f;
+  --text-color:#020307;
+  --bg-color:#ffffff;
+}
+html::-webkit-scrollbar { width: 0.5rem; background-color: var(--text-color); }
+html::-webkit-scrollbar-thumb { background-color: var(--main-color); border-radius: 9999px; }
+
+/* underline effect for nav links*/
+.nav-link{ position: relative; }
+.nav-link::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background-color: var(--main-color);
+  transition: width .35s ease;
+}
+.nav-link:hover::after, .nav-link.active::after{ width: 100%; }
+
+/* hide the default focus outline but keep accessibility with :focus-visible */
+a, button, input{ outline: none; }
+a:focus-visible, button:focus-visible, input:focus-visible{ outline: 2px solid rgba(255,44,31,.25); outline-offset: 2px; }
+
+
+header.shadow{ background-color: var(--bg-color); box-shadow: 0 0 8px rgba(2,3,7,0.08); }
+header.shadow .logo, header.shadow .mobile-menu-btn{ color: var(--text-color); }
+header.shadow .nav-desktop a{ color: var(--text-color); }
+
+
+.grid-min-180{ grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.grid-min-160{ grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+.grid-min-140{ grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+
+#mobile-nav ul li a {
+  color: #020307;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  display: inline-block; 
+  transition: color 0.3s ease;
+}
+
+#mobile-nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ff2c1f; 
+  transition: width 0.3s ease;
+}
+
+#mobile-nav ul li a:hover::after {
+  width: 100%;
+}
+
+
+    
