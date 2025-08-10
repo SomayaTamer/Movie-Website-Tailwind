@@ -6,7 +6,7 @@ A modern and fully responsive movie showcase website designed to display current
 
 ## 🚀 Live Demo
 
-🔗 *([View Live](https://somayatamer.github.io/Movie-Website-Tailwind/))*
+🔗 ([View Live](https://somayatamer.github.io/Movie-Website-Tailwind/))
 
 ---
 
@@ -84,5 +84,3 @@ Built mobile-first with Tailwind and custom CSS to work seamlessly on:
 This project is open-source and free to use.
 
 ---
-
-If you want, I can also help you create badges or add setup instructions!
